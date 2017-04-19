@@ -10,13 +10,20 @@ import {
 } from 'react-native';
 import ImageDemo from './components/ImageDemo'
 import TouchableDemo from './components/TouchableDemo'
+import XTouchableDemo from './mycomponents/XTouchableDemo'
+
 
 export default class MainPage extends Component {
     sections = [
         {
             key: 'Components', data: [
             {content: 'Image', component: ImageDemo},
-            {content: 'TouchableDemo', component: TouchableDemo}
+            {content: 'Touchable', component: TouchableDemo}
+        ]
+        },
+        {
+            key: '封装组件', data: [
+            {content: 'XTouchable', component: XTouchableDemo},
         ]
         },
     ];
