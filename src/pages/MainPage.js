@@ -9,14 +9,14 @@ import {
     Text,
 } from 'react-native';
 import ImageDemo from './components/ImageDemo'
-import TouchableWithoutFeedbackDemo from './components/TouchableWithoutFeedbackDemo'
+import TouchableDemo from './components/TouchableDemo'
 
 export default class MainPage extends Component {
     sections = [
         {
             key: 'Components', data: [
             {content: 'Image', component: ImageDemo},
-            {content: 'TouchableWithoutFeedback', component: TouchableWithoutFeedbackDemo}
+            {content: 'TouchableDemo', component: TouchableDemo}
         ]
         },
     ];
