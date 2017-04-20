@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
             ios: {
                 justifyContent: 'center',
                 alignItems: 'center',
-                backgroundColor: '#0C42FD'
             },
             android: {
                 justifyContent: 'center',

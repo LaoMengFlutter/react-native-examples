@@ -5,7 +5,9 @@ import React, {Component} from 'react';
 import {
     Navigator,
 } from 'react-native';
-
+import {
+    StackNavigator,
+} from 'react-navigation';
 import MainPage from './pages/MainPage'
 
 export default class App extends Component {

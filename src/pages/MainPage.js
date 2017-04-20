@@ -11,6 +11,13 @@ import {
 import ImageDemo from './components/ImageDemo'
 import TouchableDemo from './components/TouchableDemo'
 import XTouchableDemo from './mycomponents/XTouchableDemo'
+import SectionListDemo from './components/SectionListDemo'
+import FlatListDemo from './components/FlatListDemo'
+import ScrollViewDemo from './components/ScrollViewDemo'
+import SwitchDemo from './components/SwitchDemo'
+import TextDemo from './components/TextDemo'
+import ButtonDemo from './components/ButtonDemo'
+import ActivityIndicatorDemo from './components/ActivityIndicatorDemo'
 
 
 export default class MainPage extends Component {
@@ -18,7 +25,14 @@ export default class MainPage extends Component {
         {
             key: 'Components', data: [
             {content: 'Image', component: ImageDemo},
-            {content: 'Touchable', component: TouchableDemo}
+            {content: 'Touchable', component: TouchableDemo},
+            {content: 'SectionList', component: SectionListDemo},
+            {content: 'FlatList', component: FlatListDemo},
+            {content: 'ScrollView', component: ScrollViewDemo},
+            {content: 'Switch', component: SwitchDemo},
+            {content: 'Text', component: TextDemo},
+            {content: 'Button', component: ButtonDemo},
+            {content: 'ActivityIndicator', component: ActivityIndicatorDemo},
         ]
         },
         {
