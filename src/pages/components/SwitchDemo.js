@@ -11,7 +11,9 @@ import {
 } from 'react-native';
 
 export default class SwitchDemo extends Component {
-
+    static navigationOptions = {
+        title: 'Switch',
+    };
     state = {
         value: false,
         disabled: false,

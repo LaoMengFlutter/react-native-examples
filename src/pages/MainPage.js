@@ -8,47 +8,44 @@ import {
     SectionList,
     Text,
 } from 'react-native';
-import ImageDemo from './components/ImageDemo'
-import TouchableDemo from './components/TouchableDemo'
-import XTouchableDemo from './mycomponents/XTouchableDemo'
-import SectionListDemo from './components/SectionListDemo'
-import FlatListDemo from './components/FlatListDemo'
-import ScrollViewDemo from './components/ScrollViewDemo'
-import SwitchDemo from './components/SwitchDemo'
-import TextDemo from './components/TextDemo'
-import ButtonDemo from './components/ButtonDemo'
-import ActivityIndicatorDemo from './components/ActivityIndicatorDemo'
+
 
 
 export default class MainPage extends Component {
+    static navigationOptions = {
+        title: 'Main',
+    };
     sections = [
         {
             key: 'Components', data: [
-            {content: 'Image', component: ImageDemo},
-            {content: 'Touchable', component: TouchableDemo},
-            {content: 'SectionList', component: SectionListDemo},
-            {content: 'FlatList', component: FlatListDemo},
-            {content: 'ScrollView', component: ScrollViewDemo},
-            {content: 'Switch', component: SwitchDemo},
-            {content: 'Text', component: TextDemo},
-            {content: 'Button', component: ButtonDemo},
-            {content: 'ActivityIndicator', component: ActivityIndicatorDemo},
+            {content: 'Slider',},
+            {content: 'Image',},
+            {content: 'Touchable',},
+            {content: 'SectionList',},
+            {content: 'FlatList',},
+            {content: 'ScrollView', },
+            {content: 'Switch', },
+            {content: 'Text', },
+            {content: 'Button',},
+            {content: 'ActivityIndicator',},
+            {content: 'Navigators',},
+            {content: 'TextInput',},
         ]
         },
         {
             key: '封装组件', data: [
-            {content: 'XTouchable', component: XTouchableDemo},
+            {content: 'XTouchable',},
         ]
         },
     ];
 
     _renderItem = (info) => {
-        const {navigator} = this.props;
+        const {navigate} = this.props.navigation;
         var txt = info.item.content;
         return <Text
             style={styles.itemText} onPress={()=>{
-                if(navigator){
-                    navigator.push({component:info.item.component})
+                if(navigate){
+                    navigate(info.item.content);
                 }
             }}>{txt}</Text>
     }

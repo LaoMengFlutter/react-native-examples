@@ -15,22 +15,14 @@ import {
 } from 'react-native';
 
 export default class TouchableDemo extends Component {
-
+    static navigationOptions = {
+        title: 'Touchable',
+    };
     render() {
-        const {navigator} = this.props;
+
         return (
             <View style={styles.container}>
-                <View style={styles.headerContainer}>
-                    <Text style={styles.title} numberOfLines={1}>TouchableDemo</Text>
-                    <TouchableOpacity
-                        style={styles.touchable}
-                        onPress={()=>{
-                            navigator.pop();
-                        }}>
-                        <Image style={styles.backImg} source={require('../../imgs/back.png')}/>
-                    </TouchableOpacity>
 
-                </View>
                 <TouchableWithoutFeedback
                     disabled={false}
                     onPress={()=>{
@@ -76,8 +68,8 @@ export default class TouchableDemo extends Component {
                     }}>
                     <Text>TouchableOpacity</Text>
                 </TouchableOpacity>
-
-                <TouchableNativeFeedback
+                {/*//如果是android平台可以使用下面的控件*/}
+                {/*<TouchableNativeFeedback
                     background={TouchableNativeFeedback.SelectableBackground()}
                     onPress={()=>{
                         console.warn('onPress');
@@ -85,7 +77,7 @@ export default class TouchableDemo extends Component {
                     <View style={{height:44,backgroundColor:'#cccccc',marginTop:20,justifyContent: 'center',alignItems: 'center',}}>
                         <Text>TouchableNativeFeedback</Text>
                     </View>
-                </TouchableNativeFeedback>
+                </TouchableNativeFeedback>*/}
 
             </View>
         );

@@ -8,7 +8,9 @@ import {
 } from 'react-native';
 
 export default class ImageDemo extends Component {
-
+    static navigationOptions = {
+        title: 'Image',
+    };
     render() {
         return (
             <View style={{flex:1}}>

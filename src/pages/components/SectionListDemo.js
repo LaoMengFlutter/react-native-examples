@@ -10,7 +10,9 @@ import {
 } from 'react-native';
 
 export default class SectionListDemo extends Component {
-
+    static navigationOptions = {
+        title: 'SectionList',
+    };
     _renderItem = (info) => {
         var txt = 'index:' + info.index + '     ' + info.item.title;
         var bgColor = info.index % 2 == 0 ? 'red' : 'blue';

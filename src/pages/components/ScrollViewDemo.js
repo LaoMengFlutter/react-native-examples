@@ -15,7 +15,9 @@ import {
 
 
 export default class ScrollViewDemo extends Component {
-
+    static navigationOptions = {
+        title: 'ScrollView',
+    };
     state = {
         data:['第1个', '第2个', '第3个', '第4个', '第5个', '第6个', '第7个', '第8个', '第9个', '第10个'],
     }

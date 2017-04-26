@@ -10,7 +10,9 @@ import {
 } from 'react-native';
 
 export default class TextDemo extends Component {
-
+    static navigationOptions = {
+        title: 'Text',
+    };
     render() {
         return (
             <View style={{flex:1,marginTop:30}}>

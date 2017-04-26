@@ -10,7 +10,9 @@ import {
 } from 'react-native';
 
 export default class ButtonDemo extends Component {
-
+    static navigationOptions = {
+        title: 'Button',
+    };
     render() {
         return (
             <View style={{flex:1,marginTop:30}}>

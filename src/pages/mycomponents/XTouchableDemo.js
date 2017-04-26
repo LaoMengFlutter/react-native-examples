@@ -9,7 +9,9 @@ import {
 } from 'react-native';
 import XTouchable from '../../components/XTouchable'
 export default class XTouchableDemo extends Component {
-
+    static navigationOptions = {
+        title: 'XTouchable',
+    };
     render() {
         return (
             <View style={{flex:1,marginTop:30}}>

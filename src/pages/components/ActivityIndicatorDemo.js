@@ -9,7 +9,9 @@ import {
     ActivityIndicator,
 } from 'react-native';
 export default class ActivityIndicatorDemo extends Component {
-
+    static navigationOptions = {
+        title: 'ActivityIndicator',
+    };
     render() {
         return (
             <View style={{flex:1,marginTop:30}}>

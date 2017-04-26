@@ -13,7 +13,9 @@ import {
 var ITEM_HEIGHT = 100;
 
 export default class FlatListDemo extends Component {
-
+    static navigationOptions = {
+        title: 'FlatList',
+    };
     _flatList;
 
     _renderItem = (item) => {
