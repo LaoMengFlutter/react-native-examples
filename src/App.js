@@ -21,6 +21,7 @@ import ActivityIndicatorDemo from './pages/components/ActivityIndicatorDemo'
 import NavigatorsDemo from './pages/components/NavigatorsDemo'
 import TextInputDemo from './pages/components/TextInputDemo'
 import SliderDemo from './pages/components/SliderDemo'
+import StatusBarDemo from './pages/components/StatusBarDemo'
 
 
 
@@ -39,6 +40,8 @@ export default App = StackNavigator({
         Navigators: {screen: NavigatorsDemo,},
         TextInput:{screen: TextInputDemo,},
         Slider:{screen: SliderDemo,},
+        StatusBar:{screen: StatusBarDemo,},
+
     },
     {
         // initialRouteName: 'Profile', // 默认显示界面

@@ -18,6 +18,7 @@ export default class MainPage extends Component {
     sections = [
         {
             key: 'Components', data: [
+            {content: 'StatusBar',},
             {content: 'Slider',},
             {content: 'Image',},
             {content: 'Touchable',},
