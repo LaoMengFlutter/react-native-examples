@@ -22,7 +22,8 @@ import NavigatorsDemo from './pages/components/NavigatorsDemo'
 import TextInputDemo from './pages/components/TextInputDemo'
 import SliderDemo from './pages/components/SliderDemo'
 import StatusBarDemo from './pages/components/StatusBarDemo'
-
+import DatePickerIOSDemo from './pages/components/DatePickerIOSDemo'
+import DrawerLayoutAndroidDemo from './pages/components/DrawerLayoutAndroidDemo'
 
 
 export default App = StackNavigator({
@@ -41,7 +42,8 @@ export default App = StackNavigator({
         TextInput:{screen: TextInputDemo,},
         Slider:{screen: SliderDemo,},
         StatusBar:{screen: StatusBarDemo,},
-
+        DatePickerIOS:{screen: DatePickerIOSDemo,},
+        DrawerLayoutAndroid:{screen: DrawerLayoutAndroidDemo,},
     },
     {
         // initialRouteName: 'Profile', // 默认显示界面

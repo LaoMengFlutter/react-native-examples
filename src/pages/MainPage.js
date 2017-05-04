@@ -18,6 +18,8 @@ export default class MainPage extends Component {
     sections = [
         {
             key: 'Components', data: [
+            {content: 'DrawerLayoutAndroid',},
+            {content: 'DatePickerIOS',},
             {content: 'StatusBar',},
             {content: 'Slider',},
             {content: 'Image',},
