@@ -18,6 +18,8 @@ export default class MainPage extends Component {
     sections = [
         {
             key: 'Components', data: [
+            {content: 'Modal',},
+            {content: 'KeyboardAvoidingView',},
             {content: 'DrawerLayoutAndroid',},
             {content: 'DatePickerIOS',},
             {content: 'StatusBar',},
