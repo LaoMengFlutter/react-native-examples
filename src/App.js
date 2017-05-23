@@ -26,6 +26,12 @@ import DatePickerIOSDemo from './pages/components/DatePickerIOSDemo'
 import DrawerLayoutAndroidDemo from './pages/components/DrawerLayoutAndroidDemo'
 import KeyboardAvoidingViewDemo from './pages/components/KeyboardAvoidingViewDemo'
 import ModalDemo from './pages/components/ModalDemo'
+import PickerDemo from './pages/components/PickerDemo'
+import ProgressBarAndroidDemo from './pages/components/ProgressBarAndroidDemo'
+import RefreshControlDemo from './pages/components/RefreshControlDemo'
+import SegmentedControlIOSDemo from './pages/components/SegmentedControlIOSDemo'
+import TabBarIOSDemo from './pages/components/TabBarIOSDemo'
+
 
 export default App = StackNavigator({
         Main: {screen: MainPage,},
@@ -47,6 +53,11 @@ export default App = StackNavigator({
         DrawerLayoutAndroid:{screen: DrawerLayoutAndroidDemo,},
         KeyboardAvoidingView:{screen: KeyboardAvoidingViewDemo,},
         Modal:{screen: ModalDemo,},
+        Picker:{screen: PickerDemo,},
+        ProgressBarAndroid:{screen: ProgressBarAndroidDemo,},
+        RefreshControl:{screen: RefreshControlDemo,},
+        SegmentedControlIOS:{screen: SegmentedControlIOSDemo,},
+        TabBarIOS:{screen: TabBarIOSDemo,},
     },
     {
         // initialRouteName: 'Profile', // 默认显示界面

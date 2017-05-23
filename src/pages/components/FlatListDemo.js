@@ -38,7 +38,7 @@ export default class FlatListDemo extends Component {
 
     render() {
         var data = [];
-        for (var i = 0; i < 100; i++) {
+        for (var i = 0; i < 10; i++) {
             data.push({key: i, title: i + ''});
         }
 
@@ -67,9 +67,9 @@ export default class FlatListDemo extends Component {
                         //)}
 
                         //onEndReachedThreshold={5}
-                        //onEndReached={(info)=>{
-                        //console.warn(info.distanceFromEnd);
-                        //}}
+                        onEndReached={(info)=>{
+                        console.warn(info.distanceFromEnd);
+                        }}
 
                         //onViewableItemsChanged={(info)=>{
                         //console.warn(info);

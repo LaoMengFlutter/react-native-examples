@@ -18,6 +18,11 @@ export default class MainPage extends Component {
     sections = [
         {
             key: 'Components', data: [
+            {content: 'TabBarIOS',},
+            {content: 'SegmentedControlIOS',},
+            {content: 'RefreshControl',},
+            {content: 'ProgressBarAndroid',},
+            {content: 'Picker',},
             {content: 'Modal',},
             {content: 'KeyboardAvoidingView',},
             {content: 'DrawerLayoutAndroid',},
