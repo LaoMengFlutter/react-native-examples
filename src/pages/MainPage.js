@@ -17,7 +17,16 @@ export default class MainPage extends Component {
     };
     sections = [
         {
+            key:'API',data:[
+            {content: 'ActionSheetIOS',},
+            {content: 'AdSupportIOS',},
+        ],
+        },
+        {
+
             key: 'Components', data: [
+            {content: 'ViewPagerAndroid',},
+            {content: 'ToolbarAndroid',},
             {content: 'TabBarIOS',},
             {content: 'SegmentedControlIOS',},
             {content: 'RefreshControl',},

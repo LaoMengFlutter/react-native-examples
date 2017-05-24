@@ -31,7 +31,10 @@ import ProgressBarAndroidDemo from './pages/components/ProgressBarAndroidDemo'
 import RefreshControlDemo from './pages/components/RefreshControlDemo'
 import SegmentedControlIOSDemo from './pages/components/SegmentedControlIOSDemo'
 import TabBarIOSDemo from './pages/components/TabBarIOSDemo'
-
+import ToolbarAndroidDemo from './pages/components/ToolbarAndroidDemo'
+import ViewPagerAndroidDemo from './pages/components/ViewPagerAndroidDemo'
+import ActionSheetIOSDemo from './pages/api/ActionSheetIOSDemo'
+import AdSupportIOSDemo from './pages/api/AdSupportIOSDemo'
 
 export default App = StackNavigator({
         Main: {screen: MainPage,},
@@ -58,6 +61,10 @@ export default App = StackNavigator({
         RefreshControl:{screen: RefreshControlDemo,},
         SegmentedControlIOS:{screen: SegmentedControlIOSDemo,},
         TabBarIOS:{screen: TabBarIOSDemo,},
+        ToolbarAndroid:{screen: ToolbarAndroidDemo,},
+        ViewPagerAndroid:{screen: ViewPagerAndroidDemo,},
+        ActionSheetIOS:{screen: ActionSheetIOSDemo,},
+        AdSupportIOS:{screen: AdSupportIOSDemo,},
     },
     {
         // initialRouteName: 'Profile', // 默认显示界面
