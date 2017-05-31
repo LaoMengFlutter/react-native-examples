@@ -35,6 +35,9 @@ import ToolbarAndroidDemo from './pages/components/ToolbarAndroidDemo'
 import ViewPagerAndroidDemo from './pages/components/ViewPagerAndroidDemo'
 import ActionSheetIOSDemo from './pages/api/ActionSheetIOSDemo'
 import AdSupportIOSDemo from './pages/api/AdSupportIOSDemo'
+import AlertDemo from './pages/api/AlertDemo'
+import AnimatedDemo from './pages/api/AnimatedDemo'
+
 
 export default App = StackNavigator({
         Main: {screen: MainPage,},
@@ -65,6 +68,8 @@ export default App = StackNavigator({
         ViewPagerAndroid:{screen: ViewPagerAndroidDemo,},
         ActionSheetIOS:{screen: ActionSheetIOSDemo,},
         AdSupportIOS:{screen: AdSupportIOSDemo,},
+        Alert:{screen: AlertDemo,},
+        Animated:{screen: AnimatedDemo,},
     },
     {
         // initialRouteName: 'Profile', // 默认显示界面
