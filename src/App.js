@@ -37,6 +37,8 @@ import ActionSheetIOSDemo from './pages/api/ActionSheetIOSDemo'
 import AdSupportIOSDemo from './pages/api/AdSupportIOSDemo'
 import AlertDemo from './pages/api/AlertDemo'
 import AnimatedDemo from './pages/api/AnimatedDemo'
+import AppStateDemo from './pages/api/AppStateDemo'
+import AsyncStorageDemo from './pages/api/AsyncStorageDemo'
 
 
 export default App = StackNavigator({
@@ -70,6 +72,8 @@ export default App = StackNavigator({
         AdSupportIOS:{screen: AdSupportIOSDemo,},
         Alert:{screen: AlertDemo,},
         Animated:{screen: AnimatedDemo,},
+        AppState:{screen: AppStateDemo,},
+        AsyncStorage:{screen: AsyncStorageDemo,},
     },
     {
         // initialRouteName: 'Profile', // 默认显示界面

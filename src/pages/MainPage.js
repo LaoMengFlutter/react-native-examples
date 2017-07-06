@@ -18,6 +18,8 @@ export default class MainPage extends Component {
     sections = [
         {
             key:'API',data:[
+            {content: 'AsyncStorage',},
+            {content: 'AppState',},
             {content: 'Animated',},
             {content: 'ActionSheetIOS',},
             {content: 'AdSupportIOS',},
