@@ -24,11 +24,16 @@ export default class MainPage extends Component {
             {content: 'ActionSheetIOS',},
             {content: 'AdSupportIOS',},
             {content: 'Alert',},
+            {content: 'Vibration',},
+            {content: 'TimePickerAndroid',},
+
         ],
         },
         {
 
             key: 'Components', data: [
+
+            {content: 'ImageBackground',},
             {content: 'ViewPagerAndroid',},
             {content: 'ToolbarAndroid',},
             {content: 'TabBarIOS',},

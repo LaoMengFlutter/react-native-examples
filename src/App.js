@@ -3,12 +3,12 @@
  */
 import React, {Component} from 'react';
 import {
-    Navigator,
 } from 'react-native';
 import {StackNavigator, TabNavigator, DrawerNavigator} from 'react-navigation';
 
 import MainPage from './pages/MainPage'
 import ImageDemo from './pages/components/ImageDemo'
+import ImageBackgroundDemo from './pages/components/ImageBackgroundDemo'
 import TouchableDemo from './pages/components/TouchableDemo'
 import XTouchableDemo from './pages/mycomponents/XTouchableDemo'
 import SectionListDemo from './pages/components/SectionListDemo'
@@ -39,11 +39,13 @@ import AlertDemo from './pages/api/AlertDemo'
 import AnimatedDemo from './pages/api/AnimatedDemo'
 import AppStateDemo from './pages/api/AppStateDemo'
 import AsyncStorageDemo from './pages/api/AsyncStorageDemo'
-
+import VibrationDemo from './pages/api/VibrationDemo'
+import TimePickerAndroidDemo from './pages/api/TimePickerAndroidDemo'
 
 export default App = StackNavigator({
         Main: {screen: MainPage,},
         Image: {screen: ImageDemo,},
+        ImageBackground: {screen: ImageBackgroundDemo,},
         Touchable: {screen: TouchableDemo,},
         XTouchable: {screen: XTouchableDemo,},
         SectionList: {screen: SectionListDemo,},
@@ -74,12 +76,15 @@ export default App = StackNavigator({
         Animated:{screen: AnimatedDemo,},
         AppState:{screen: AppStateDemo,},
         AsyncStorage:{screen: AsyncStorageDemo,},
+        Vibration:{screen: VibrationDemo,},
+        TimePickerAndroid:{screen: TimePickerAndroidDemo,},
+
     },
     {
         // initialRouteName: 'Profile', // 默认显示界面
-        navigationOptions: {
-            header: {
-                backTitle: 'Back',
+        // navigationOptions: {
+        //     header: {
+                // backTitle: 'Back',
                 // style:styles.header,
                 // right: <Button title="Info" />,
                 // left:<Button title="left" />,
@@ -88,8 +93,8 @@ export default App = StackNavigator({
                 // title: 'ProfileScreen',
                 // tintColor:'yellow',
                 // gesturesEnabled:true,
-            },
-        },
+            // },
+        // },
         // headerMode:'screen',
     }
 );
