@@ -41,6 +41,7 @@ import AppStateDemo from './pages/api/AppStateDemo'
 import AsyncStorageDemo from './pages/api/AsyncStorageDemo'
 import VibrationDemo from './pages/api/VibrationDemo'
 import TimePickerAndroidDemo from './pages/api/TimePickerAndroidDemo'
+import PullZoomView from './pages/mycomponents/PullZoomScrollViewDemo'
 
 export default App = StackNavigator({
         Main: {screen: MainPage,},
@@ -78,7 +79,7 @@ export default App = StackNavigator({
         AsyncStorage:{screen: AsyncStorageDemo,},
         Vibration:{screen: VibrationDemo,},
         TimePickerAndroid:{screen: TimePickerAndroidDemo,},
-
+        PullZoomView:{screen: PullZoomView,},
     },
     {
         // initialRouteName: 'Profile', // 默认显示界面

@@ -63,6 +63,7 @@ export default class MainPage extends Component {
         {
             key: '封装组件', data: [
             {content: 'XTouchable',},
+            {content: 'PullZoomView',},
         ]
         },
     ];
